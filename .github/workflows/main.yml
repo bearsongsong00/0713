@@ -8,12 +8,9 @@ jobs:                           #工作
         runs-on: ubuntu-latest  #執行最新版本
         steps:
         - uses: actions/checkout@v2  #用:動作/
-        - name: Install package
-          run: |                     #確保執行python3
-            pip3 install mediapipe
-        - name: Run test0713 py      #命名讀取該檔案
+        - name: Run send mail py      #命名讀取該檔案
           run: |                     #讀取該檔案
-            python3 test0713.py      
+            python3 send_mail.py      
         - name: Run test0713-2 py
           run: |
             python3 test0713-2.py
