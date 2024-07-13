@@ -5,7 +5,7 @@ from email.header import Header
 sender = "songsongbearbear04@gmail.com"        #把寄件者設立代號
 receiver = ["nishiontsukasajp@gmail.com","songsongbearbear04@gmail.com"]
 msg = MIMEMultipart()
-for ctt in receiver:  
+for ctt in receiver:        #後面帶入要重複作業地方
     msg["From"] = sender   #寄件人
     msg["To"] = ctt      #收件人
     header = Header("Test send Email","utf-8")     #主旨跟使用UTF-8編碼
