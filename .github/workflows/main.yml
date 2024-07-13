@@ -1,0 +1,13 @@
+name: Run my pythin
+on:
+    push:
+
+jobs:
+    build:
+        name: do job1
+        runs-on: ubuntu-latest
+        steps:
+        - uses: action/checkout@v2
+        - name: Run test0713.py
+          run: 
+            python3 test0713.py
