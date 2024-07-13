@@ -1,6 +1,5 @@
 import sys
 import mediapipe 
-import BeautifulSoup
 print("Hello world")
 a = 1
 b = 2
