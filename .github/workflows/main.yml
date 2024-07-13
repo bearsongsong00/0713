@@ -18,7 +18,7 @@ jobs:                           #工作
         name: do job2
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@V2
-        - name: Run tesr py
+        - uses: actions/checkout@v2
+        - name: Run tesr0713-2 py
           run: |
            python3 test0713-2.py
