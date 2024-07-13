@@ -1,13 +1,16 @@
-name: Run my pythin
+name: Run my pythin             #name 為命名
 on:
     push:
 
-jobs:
-    build:
+jobs:                           #工作
+    build:                      #建造
         name: do job1
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-latest  #執行最新版本
         steps:
-        - uses: actions/checkout@v2
-        - name: Run test0713 py
-          run: 
-            python3 test0713.py
+        - uses: actions/checkout@v2  #用:動作/
+        - name: Run test0713 py      #命名讀取該檔案
+          run: |
+            python3 test0713.py      #讀取該檔案
+        - name: Run test0713-2 py
+          run: |
+            pythos3 test0713-2.py
