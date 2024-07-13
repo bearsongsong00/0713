@@ -13,4 +13,4 @@ jobs:                           #工作
             python3 test0713.py      #讀取該檔案
         - name: Run test0713-2 py
           run: |
-            pythos3 test0713-2.py
+            python3 test0713-2.py
